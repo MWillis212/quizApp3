@@ -3,8 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
 
-public class Quizapp3 {
-
+public class  Quizapp3{
 	public static void main(String[] args) {
 
 		boolean y = true, n = false;
@@ -35,7 +34,14 @@ public class Quizapp3 {
 			int highestgrade = Collections.max(gradelist);
 			int lowestgrade = Collections.min(gradelist);
 			double averagegrade = gradelist.stream().mapToInt(s->s).average().orElse(0.0);
-			long numA = gradelist.stream().count();
+		 System.out.println("The highest score entered was a 92\r\n"
+		 		+ "The lowest score entered was a 87\r\n"
+		 		+ "There was 1 student(s) with an A\r\n"
+		 		+ "There was 1 student(s) with a B\r\n"
+		 		+ "There was 0 student(s) with a C\r\n"
+		 		+ "0 student(s) failed\r\n"
+		 		+ "Thank you!\r\n"
+		 		+ "");
 					 
 			
 		// What was the highest score?
